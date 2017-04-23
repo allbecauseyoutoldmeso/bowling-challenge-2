@@ -29,7 +29,7 @@ Game.prototype.updateAndStore = function () {
 Game.prototype.endGame = function () {
   this._processFrame()
   if(this._frame === 10) { this._storeFrame() }
-  if(this._currentFrame.bonusFeature() === 'strike' || this._currentFrame.bonusFeature() === 'spare') {
+  if(this._currentFrame.bonusFeature() === 'strike!' || this._currentFrame.bonusFeature() === 'spare!') {
     this._applyBonusRolls()
   } else {
     this._gameOver = true
@@ -37,9 +37,9 @@ Game.prototype.endGame = function () {
 }
 
 Game.prototype._applyBonusRolls = function() {
-  if(this._currentFrame.bonusFeature() === 'strike') {
+  if(this._currentFrame.bonusFeature() === 'strike!') {
     this._currentFrame = new BonusRolls(2);
-  } else if (this._currentFrame.bonusFeature() === 'spare') {
+  } else if (this._currentFrame.bonusFeature() === 'spare!') {
     this._currentFrame = new BonusRolls(1);
   }
 }
@@ -62,7 +62,7 @@ Game.prototype.isFinished = function() {
 }
 
 Game.prototype._checkIfBakfast = function() {
-  if(this.lastFrame().bonusFeature() === 'strike' && this._lastLastFrame().bonusFeature() === 'strike') {
+  if(this.lastFrame().bonusFeature() === 'strike!' && this._lastLastFrame().bonusFeature() === 'strike!') {
     this._bakBonus()
   }
 }
@@ -74,9 +74,9 @@ Game.prototype.total = function() {
 }
 
 Game.prototype._addBonuses = function() {
-  if(this.lastFrame().bonusFeature() === 'spare') {
+  if(this.lastFrame().bonusFeature() === 'spare!') {
     this._spareBonus()
-  } else if(this.lastFrame().bonusFeature() === 'strike') {
+  } else if(this.lastFrame().bonusFeature() === 'strike!') {
     this._strikeBonus()
   }
 }

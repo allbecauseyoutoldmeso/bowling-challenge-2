@@ -47,16 +47,16 @@ Frame.prototype.addBonus = function(points) {
 
 Frame.prototype.bonusFeature = function() {
   if(this._rollOnePoints === 10) {
-    return 'strike'
+    return 'strike!'
   } else if (this._rollTwoPoints + this._rollOnePoints === 10) {
-    return 'spare'
+    return 'spare!'
   } else {
     return ''
   }
 }
 
 Frame.prototype.isFinished = function() {
-  if(this.bonusFeature() === 'strike' || this._roll === 3) {
+  if(this.bonusFeature() === 'strike!' || this._roll === 3) {
     return true
   } else {
     return false
