@@ -38,7 +38,7 @@ $(document).ready(function() {
   function endFrame() {
     updateFrameOver()
     $('.start-frame').hide();
-    $('.end-frame').show();  
+    $('.end-frame').show();
   }
 
   function updateFrameOver() {
