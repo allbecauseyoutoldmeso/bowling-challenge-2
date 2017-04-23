@@ -1,11 +1,20 @@
 body {
-  font-family: 'Reenie Beanie', cursive;
+  /*font-family: 'Reenie Beanie', cursive;*/
+  /*font-family: 'Bree Serif', serif;*/
+  font-family: 'Pacifico', cursive;
+  /*font-family: 'Marck Script', cursive;*/
   font-size:  40px;
-  background-color: rgb(248,248,236);
+  color:  rgb(56,47,50);
+  background-color: rgb(221,95,95);
 }
 
 p {
   margin: 3px;
+}
+
+#title {
+  display: block;
+  margin: auto;
 }
 
 #frame-stats {
@@ -37,8 +46,6 @@ p {
 #pins {
   display: block;
   margin: auto;
-  width: 500px;
-  height:500px;
 }
 
 #controls {
@@ -48,10 +55,10 @@ p {
 
 
 #ball {
-  width:100px;
-  height:100px;
+  width:300px;
+  height:300px;
   position: absolute;
   margin-left: 400px;
-  margin-bottom: 200px;
+  margin-bottom: 0px;
 
 }

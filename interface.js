@@ -30,18 +30,15 @@ $(document).ready(function() {
   });
 
   function startFrame() {
-    $('#frame-over').hide();
-    $('#frame-stats').show();
+    $('.end-frame').hide();
+    $('.start-frame').show();
     $('#new-frame').hide();
-    $('#roll').show();
   }
 
   function endFrame() {
-    $('#roll').hide();
-    $('#new-frame').show();
-    $('#frame-stats').hide();
     updateFrameOver()
-    $('#frame-over').show();
+    $('.start-frame').hide();
+    $('.end-frame').show();  
   }
 
   function updateFrameOver() {
@@ -58,7 +55,7 @@ $(document).ready(function() {
 
   function log() {
     writeLog()
-    updateLog()  
+    updateLog()
   }
 
   function writeLog() {
@@ -118,8 +115,6 @@ $(document).ready(function() {
     $('#game-stats').append('<p>bonus roll points: <span id="final-bonus"></span></p>')
     $('#final-bonus').text(game.currentFrame().points());
   }
-
-
 
   // function animateBall() {
   //   $('#ball').animate({
