@@ -7,7 +7,7 @@ $(document).ready(function() {
   $('.bonus-rolls-feature').hide();
   $('#game-over').hide();
 
-  $('#roll').on('click', function() {
+  $('#ball').on('click', function() {
     game.roll();
     updateFrame();
     if(game.currentFrame().isFinished()) { checkGameStatus() }
@@ -98,10 +98,10 @@ $(document).ready(function() {
     $("#pins").show();
     updateBonusRolls()
     $('.bonus-rolls-feature').show();
-    $('#roll').hide();
+    $('#ball').hide();
   }
 
-  $('#bonus-roll-button').on('click', function() {
+  $('#bonus-ball').on('click', function() {
     game.roll();
     updateBonusRolls()
     if(game.currentFrame().isFinished()) {

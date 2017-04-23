@@ -1,8 +1,5 @@
 body {
-  /*font-family: 'Reenie Beanie', cursive;*/
-  /*font-family: 'Bree Serif', serif;*/
   font-family: 'Pacifico', cursive;
-  /*font-family: 'Marck Script', cursive;*/
   font-size:  40px;
   color:  rgb(56,47,50);
   background-color: rgb(221,95,95);
@@ -48,17 +45,12 @@ p {
   margin: auto;
 }
 
-#controls {
-  position: relative;
-  text-align: center;
+
+#balls {
+  display: block;
+  margin: auto;
 }
 
-
-#ball {
-  width:300px;
-  height:300px;
-  position: absolute;
-  margin-left: 400px;
-  margin-bottom: 0px;
-
+#controls {
+  text-align: center;
 }
