@@ -1,6 +1,6 @@
 body {
   font-family: 'Pacifico', cursive;
-  font-size:  40px;
+  font-size:  50px;
   color:  rgb(56,47,50);
   background-color: rgb(221,95,95);
 }
@@ -9,9 +9,17 @@ p {
   margin: 3px;
 }
 
+button {
+  font-family: 'Pacifico', cursive;
+  border-radius: 40px;
+  background-color: rgb(244,219,195);
+  border: 6px solid rgb(56,47,50);
+}
+
 #title {
   display: block;
   margin: auto;
+  padding: 0px;
 }
 
 #frame-stats {
@@ -41,12 +49,6 @@ p {
 
 
 #pins {
-  display: block;
-  margin: auto;
-}
-
-
-#balls {
   display: block;
   margin: auto;
 }
