@@ -8,6 +8,7 @@ $(document).ready(function() {
   $('#game-over').hide();
 
   $('#ball').on('click', function() {
+    $('#hint').hide();
     game.roll();
     updateFrame();
     if(game.currentFrame().isFinished()) { checkGameStatus() }
@@ -115,14 +116,5 @@ $(document).ready(function() {
     $('#game-stats').append('<p>bonus roll points: <span id="final-bonus"></span></p>')
     $('#final-bonus').text(game.currentFrame().points());
   }
-
-  // function animateBall() {
-  //   $('#ball').animate({
-  //     left: '250px',
-  //     bottom: '100px',
-  //     height: '80px',
-  //     width: '80px'
-  //   }, 'slow', function () { $(this).removeAttr('style'); });
-  // }
 
 });

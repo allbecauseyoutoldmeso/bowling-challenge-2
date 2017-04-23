@@ -9,30 +9,17 @@ p {
   margin: 3px;
 }
 
-button {
-  font-family: 'Pacifico', cursive;
-  border-radius: 40px;
-  background-color: rgb(244,219,195);
-  border: 6px solid rgb(56,47,50);
-}
-
 #title {
+  width: 943px;
+  height: 299px;
+  position: relative;
   display: block;
   margin: auto;
-  padding: 0px;
 }
 
-#frame-stats {
+#commentary {
   position: relative;
-  top: 0px;
-  text-align: center;
-}
-
-#frame-over {
-  text-align: center;
-}
-
-#bonus-rolls {
+  height: 400px;
   text-align: center;
 }
 
@@ -42,17 +29,23 @@ button {
   text-align: left;
 }
 
-
-#game-over {
-  text-align: center;
-}
-
-
 #pins {
+  position: relative;
+  width: 726px;
+  height: 584px;
   display: block;
   margin: auto;
 }
 
 #controls {
+  position: relative;
   text-align: center;
+}
+
+#new-frame {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  border-radius: 40px;
+  background-color: rgb(244,219,195);
+  border: 6px solid rgb(56,47,50);
 }

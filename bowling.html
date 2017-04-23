@@ -3,63 +3,63 @@
   <html>
 
     <head>
-
       <title>bowling</title>
       <link rel="stylesheet" type="text/css" href="style.css">
-      <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
     </head>
 
     <body>
 
 
-      <section>
+      <div>
         <img id='title' src='pins/title.png'>
-      </section>
+      </div>
 
-      <section id='game-stats'>
+      <div id='game-stats'>
         <p>total score: <span id='total-score'></span></p>
-      </section>
+      </div>
+
+      <div id='commentary'>
+
+        <section id='game-over'>
+          <p>game over!<p>
+          <p><span id='final frame'></span></p>
+        </section>
+
+        <section class='start-frame' id='frame-stats'>
+          <p>frame: <span id='this-frame-number'></span></p>
+          <p>points: <span id='this-frame-points'></span></p>
+          <p>roll: <span id='this-frame-roll'></span></p>
+        </section>
+
+        <section class='bonus-rolls-feature' id='bonus-rolls'>
+          <p>bonus rolls!</p>
+          <p>points: <span id='bonus-rolls-points'></span></p>
+          <p>rolls allowed: <span id='bonus-rolls-allowed'></span></p>
+        </section>
+
+        <section class='end-frame' id='frame-over'>
+          <p>frame over</p>
+          <p>points: <span id='last-frame-points'></span></p>
+          <p><span id='bonus-feature'></span></p>
+        </section>
+
+      </div>
 
       <div>
+        <section>
+          <img id='pins' src='pins/10_pins.png'>
+        </section>
+      </div>
 
-      <section id='game-over'>
-        <p>game over!<p>
-        <p><span id='final frame'></span></p>
-
-      </section>
-
-      <section class='start-frame' id='frame-stats'>
-        <p>frame: <span id='this-frame-number'></span></p>
-        <p>points: <span id='this-frame-points'></span></p>
-        <p>roll: <span id='this-frame-roll'></span></p>
-      </section>
-
-      <section class='bonus-rolls-feature' id='bonus-rolls'>
-        <p>bonus rolls!</p>
-        <p>points: <span id='bonus-rolls-points'></span></p>
-        <p>rolls allowed: <span id='bonus-rolls-allowed'></span></p>
-      </section>
-
-      <section class='end-frame' id='frame-over'>
-        <p>frame over</p>
-        <p>points: <span id='last-frame-points'></span></p>
-        <p><span id='bonus-feature'></span></p>
-      </section>
-
-      <section>
-        <img id='pins' src='pins/10_pins.png'>
-      </section>
-
-      <section id='controls'>
-        <img class='start-frame' id='ball' src='pins/ball.png'>
-        <img class='bonus-rolls-feature' id='bonus-ball' src='pins/ball.png'>
-        <button style='font-size:50px' class='end-frame' id='new-frame'>next frame</button>
-      </section>
-
-    </div>
+      <div>
+        <section id='controls'>
+          <img class='start-frame' id='ball' src='pins/ball.png'>
+          <img class='bonus-rolls-feature' id='bonus-ball' src='pins/ball.png'>
+          <button class='end-frame' id='new-frame'>next frame</button>
+          <p id='hint'>click me!</p>
+        </section>
+     </div>
 
       <script src='src/Game.js'></script>
       <script src='src/Frame.js'></script>
