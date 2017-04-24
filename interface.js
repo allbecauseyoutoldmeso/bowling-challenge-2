@@ -9,6 +9,7 @@ $(document).ready(function() {
 
   $('#ball').on('click', function() {
     $('#hint').hide();
+    // animateBall()
     game.roll();
     updateFrame();
     if(game.currentFrame().isFinished()) { checkGameStatus() }
@@ -51,7 +52,7 @@ $(document).ready(function() {
     $('#this-frame-number').text(game.currentFrame().number());
     $('#this-frame-points').text(game.currentFrame().points());
     $('#this-frame-roll').text(game.currentFrame().currentRoll());
-    $("#pins").attr("src", 'pins/' + game.currentFrame().pins() + '_pins.png');
+    $('#pins').attr("src", 'pins/' + game.currentFrame().pins() + '_pins.png');
   };
 
   function log() {
@@ -115,6 +116,12 @@ $(document).ready(function() {
   function logBonusPoints() {
     $('#game-stats').append('<p>bonus roll points: <span id="final-bonus"></span></p>')
     $('#final-bonus').text(game.currentFrame().points());
+  }
+
+  function animateBall() {
+    $('#ball').animate( {
+      bottom: '100px',
+    } );
   }
 
 });

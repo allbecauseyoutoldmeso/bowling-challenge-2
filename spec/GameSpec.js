@@ -67,7 +67,6 @@ describe('Game', function() {
       Roll()
       Roll()
     }
-    debugger
     expect(game.isFinished()).toEqual(false)
   });
 
@@ -129,6 +128,24 @@ describe('Game', function() {
     }
     Roll()
     expect(game.total()).toEqual(300)
+  });
+
+  it('identifies a guttergame', function() {
+    for(var x = 0; x < 10; x++) {
+      spyOn(game._currentFrame, '_hit').and.returnValue(0)
+      Roll()
+      Roll()
+    }
+    expect(game.isGutterGame()).toEqual(true)
+  });
+
+  it('identifies a perfect game', function() {
+    for(var x = 0; x < 11; x++) {
+      spyOn(game._currentFrame, '_hit').and.returnValue(10)
+      Roll()
+    }
+    Roll()
+    expect(game.isPerfectGame()).toEqual(true)
   });
 
   Roll = function() {

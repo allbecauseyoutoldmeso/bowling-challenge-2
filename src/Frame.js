@@ -55,6 +55,24 @@ Frame.prototype.bonusFeature = function() {
   }
 }
 
+Frame.prototype.isStrike = function () {
+  if(this._rollOnePoints === 10) {
+    return true
+  }
+  else {
+    return false
+  }
+}
+
+Frame.prototype.isSpare = function () {
+  if(this._rollTwoPoints + this._rollOnePoints === 10) {
+    return true
+  }
+  else {
+    return false
+  }
+}
+
 Frame.prototype.isFinished = function() {
   if(this.bonusFeature() === 'strike!' || this._roll === 3) {
     return true

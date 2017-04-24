@@ -52,6 +52,17 @@ BonusRolls.prototype.isFinished = function() {
   }
 }
 
+BonusRolls.prototype.isStrike = function () {
+  if(this._rollOnePoints === 10) {
+    return false
+  }
+}
+
+BonusRolls.prototype.isSpare = function () {
+    return false
+}
+
+
 BonusRolls.prototype.bonusFeature = function() {
   return ''
 }
