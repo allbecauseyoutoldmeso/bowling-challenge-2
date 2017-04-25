@@ -137,6 +137,8 @@ describe('Game', function() {
       Roll()
     }
     expect(game.isGutterGame()).toEqual(true)
+    expect(game.gutterPerfect()).toEqual('guttergame')
+  });
   });
 
   it('identifies a perfect game', function() {
@@ -146,6 +148,7 @@ describe('Game', function() {
     }
     Roll()
     expect(game.isPerfectGame()).toEqual(true)
+    expect(game.gutterPerfect()).toEqual('perfect game!')
   });
 
   Roll = function() {

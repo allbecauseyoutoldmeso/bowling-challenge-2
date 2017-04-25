@@ -86,6 +86,7 @@ $(document).ready(function() {
     $('#bonus-rolls').hide();
     $('#frame-stats').hide();
     $('#controls').hide();
+    $('#gutter-perfect').text(game.gutterPerfect());
     $('#game-over').show();
   }
 

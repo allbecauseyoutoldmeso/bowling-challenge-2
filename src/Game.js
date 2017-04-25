@@ -117,10 +117,20 @@ Game.prototype.isGutterGame = function () {
   }
 }
 
-Game.prototype.isPerfectGame= function() {
+Game.prototype.isPerfectGame = function() {
   if(this.total() === 300) {
     return true
   } else {
   return false
+  }
+}
+
+Game.prototype.gutterPerfect = function() {
+  if(this.isGutterGame()) {
+    return 'guttergame'
+  } else if (this.isPerfectGame()) {
+    return 'perfect game!'
+  } else {
+    return ''
   }
 }
