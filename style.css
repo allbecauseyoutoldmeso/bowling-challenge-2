@@ -1,17 +1,17 @@
 body {
   font-family: 'Pacifico', cursive;
-  font-size:  50px;
+  font-size:  25px;
   color:  rgb(56,47,50);
   background-color: rgb(221,95,95);
 }
 
 p {
-  margin: 3px;
+  margin: 2px;
 }
 
 #title {
-  width: 943px;
-  height: 299px;
+  width: 472px;
+  height: 150px;
   position: relative;
   display: block;
   margin: auto;
@@ -19,7 +19,7 @@ p {
 
 #commentary {
   position: relative;
-  height: 400px;
+  height: 200px;
   text-align: center;
 }
 
@@ -31,8 +31,8 @@ p {
 
 #pins {
   position: relative;
-  width: 726px;
-  height: 584px;
+  width: 363px;
+  height: 292px;
   display: block;
   margin: auto;
 }
@@ -42,10 +42,20 @@ p {
   text-align: center;
 }
 
+#ball {
+  width: 150px;
+  height: 150px;
+}
+
+#bonus-ball {
+  width: 150px;
+  height: 150px;  
+}
+
 #new-frame {
   font-family: 'Pacifico', cursive;
-  font-size: 50px;
-  border-radius: 40px;
+  font-size: 25px;
+  border-radius: 20px;
   background-color: rgb(244,219,195);
-  border: 6px solid rgb(56,47,50);
+  border: 3px solid rgb(56,47,50);
 }

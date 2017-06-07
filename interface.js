@@ -9,7 +9,6 @@ $(document).ready(function() {
 
   $('#ball').on('click', function() {
     $('#hint').hide();
-    // animateBall()
     game.roll();
     updateFrame();
     if(game.currentFrame().isFinished()) { checkGameStatus() }
