@@ -14,4 +14,4 @@ Bowling Challenge
 <img width="712" alt="screen shot 2017-05-14 at 15 52 34" src="https://cloud.githubusercontent.com/assets/25392162/26035041/e57118ca-38bd-11e7-95b0-b3bf607481aa.png">
 
 * To be improved:  
-The app isn't browser sensitive, so on some browsers you have to zoom in or out to comfortably play it.  To be addressed!
+The app isn't sensitive to window size, so on some devices you have to zoom in or out to comfortably play it. To be addressed!
