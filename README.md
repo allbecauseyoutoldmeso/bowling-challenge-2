@@ -3,7 +3,7 @@ Bowling Challenge
 =================
 
 
-* Makers academy week 5 weekend challenge.
+* Makers academy week 5 weekend challenge, worked on independently.
 
 * A single page JavaScript/jQuery bowling app.  Scoring system complete with strikes, spares, bonus rolls and perfect/gutter games. (All considerably more tricky than it sounds!)
 
