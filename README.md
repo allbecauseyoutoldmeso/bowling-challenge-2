@@ -7,7 +7,7 @@ Bowling Challenge
 
 * Solo project.
 
-* A single page JavaScript/jQuery bowling app.  Scoring system complete with strikes, spares, bonus rolls and perfect/gutter games. (All considerably more tricky than it sounds!)
+* A single page JavaScript/jQuery bowling app, TDDed using Jasmine.  Scoring system complete with strikes, spares, bonus rolls and perfect/gutter games. (All considerably more tricky than it sounds!)
 
 * You can play it <a href=https://allbecauseyoutoldmeso.github.io/bowling-challenge-2/>here</a>.
 
